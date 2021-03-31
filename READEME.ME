@@ -1,0 +1,54 @@
+REQUESTS:
+
+    GET /logged
+        verifica se esta logado
+        RETURN:
+            {
+                logged: boolean,
+                result?:any
+            }
+
+    GET /singout
+        faz logoff
+        RETURN:
+            {
+                logoff: boolean
+            }
+
+    POST /singin
+        faz o login de usuário
+        BODY:
+            {
+                login: string,
+                password: string
+            }
+        RETURN:
+            {
+                error: string,
+                attempts: number,
+                timeLeft: number,
+                logged: boolean,
+                user: any
+            }
+
+INSTRUÇÃO INICIAL:
+
+    acesse o arquivo "api/src/edit-me.ts"
+    edite as constants de acordo sua necessidade
+    edite o type "TTokenData"
+    edite a função "validateLogin"
+
+COMANDOS:
+
+    npm run dev
+        roda em modo test
+
+    npm run build
+        gera o build
+
+    npm run start
+        roda o build gerado
+
+    npm run test
+        roda o test
+        tem que rodar o dev ou o build e start

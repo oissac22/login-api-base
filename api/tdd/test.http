@@ -1,0 +1,24 @@
+GET http://localhost:11000/logged
+###
+
+GET http://localhost:11000/singout
+###
+
+
+POST http://localhost:11000/singin
+Content-Type: application/json
+
+{
+    "login":"test adm login",
+    "password": "passwordTest"
+}
+###
+
+
+POST http://localhost:11000/singin
+Content-Type: application/json
+
+{
+    "login":"test adm login",
+    "password": "12345"
+}
